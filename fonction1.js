@@ -19,6 +19,19 @@ function afficherNombresPairs(nombre){
     console.log(texte);
 }
 
+function afficherNombresPairs(nombre){
+    let texte="";
+    for(let u=1;u<=nombre;u++){
+        let pair = u*2;
+        if(u===nombre){
+            texte += `${pair}`;
+        } else {
+            texte += `${pair} - `;
+        }
+    }
+    console.log(texte);
+}
+
 function afficherPuissancesDeDeux(){
     for(let o=1;o<17;o++){
         let puissanceResultat = Math.pow(2,o);
@@ -37,7 +50,6 @@ function afficherPuissancesDeDeuxWhile(){
     console.log(texte);
 }
 
-let texte="";
 let n = prompt(`Saisir un nombre`);
 afficherLesNombres(n);
 afficherLesNombresRetour(n);
