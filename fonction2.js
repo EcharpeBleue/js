@@ -14,8 +14,8 @@
     newAverage=resultat/array.length;
     return newAverage;
   }
-  
-  let tableauNouveau = ['21', '8', '4'];
+  4
+  let tableauNouveau = ['7', '10', '7'];
   let newAverage; // Déclaration de la variable
   newAverage = averageArrayElements(tableauNouveau);
   console.log(newAverage);
